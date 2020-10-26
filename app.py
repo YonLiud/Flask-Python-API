@@ -42,18 +42,21 @@ def validatekey(key):
             return 1
     else:
         return 0
+    keys_conn.close()
 def register_key(name, email):
     keys_conn = sqlite3.connect('api_keys.db')
     cursor = keys_conn.cursor()
-    generater_key = secrets.token_urlsafe(16)
+    generated_key = secrets.token_urlsafe(16)
     try:
-        cursor.execute('INSERT INTO keys VALUES(?, ?, ?)', (generater_key, name, email))
-        if not validatekey(register_key):
+        cursor.execute('INSERT INTO keys VALUES(?, ?, ?)', (generated_key, name, email))
+        keys_conn.commit()
+        if not validatekey(generated_key):
             raise IndentationError("Failed to register key")
-        return register_key
+        return generated_key
     except Exception as exc:
         print(exc)
         return exc
+
 
 
 
