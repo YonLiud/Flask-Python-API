@@ -2,9 +2,9 @@
 {% block body %}
 <h1>Generate API key</h1>
 <p>To use the API you must register an API key</p>
-<form>
-    <p>Name:<br><input type="text" required placeholder="Your Name" id="name"></p>
-    <p>Email:<br><input type="email" required placeholder="name@example.com" id="email"></p>
+<form action="" method="POST">
+    <p>Name:<br><input type="text" placeholder="Your Name" id="name" name="name"></p>
+    <p>Email:<br><input type="email" placeholder="name@example.com" id="email" name="email"></p>
     <input type="submit" />
 </form>
 <p>Unique Key = {{key}}</p>

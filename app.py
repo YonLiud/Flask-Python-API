@@ -42,10 +42,19 @@ def validatekey(key):
             return 1
     else:
         return 0
-
-
-def register_key():
+def register_key(name, email):
+    keys_conn = sqlite3.connect('api_keys.db')
     cursor = keys_conn.cursor()
+    generater_key = secrets.token_urlsafe(16)
+    try:
+        cursor.execute('INSERT INTO keys VALUES(?, ?, ?)', (generater_key, name, email))
+        if not validatekey(register_key):
+            raise IndentationError("Failed to register key")
+        return register_key
+    except Exception as exc:
+        print(exc)
+        return exc
+
 
 
 # Flask Decorators
@@ -56,8 +65,10 @@ def home():
 
 @app.route('/api/contacts', methods=['GET', 'POST'])
 def contacts_home():
-    key = "hello"
     if request.method=='POST':
+        name = request.form["name"]
+        email = request.form["email"]
+        key = register_key(name, email)
         return render_template('api_gen.html', key=key)
     return render_template('api_gen.html', key="Fill out the form to register a key")
 
