@@ -1,2 +1,4 @@
 database.db
 nameMe API.code-workspace
+__pycache__/
+api_keys.db
