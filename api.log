@@ -1,0 +1,121 @@
+INFO - 27-10-20 17:22:25 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:22:25 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:22:25 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:22:25 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:22:25 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:22:25 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:26:36 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:26:36 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:26:36 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:27:25 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:27:25 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:27:25 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:27:44 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:27:44 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:27:44 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:27:51 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:27:51 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:27:51 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:27:51 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:27:51 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:27:51 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:29:18 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:29:18 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:29:18 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:29:18 -  * Debugger is active!
+INFO - 27-10-20 17:29:18 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:29:18 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:29:20 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:29:20 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:29:20 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:29:20 -  * Restarting with stat
+INFO - 27-10-20 17:29:20 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:29:20 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:29:20 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:29:20 -  * Debugger is active!
+INFO - 27-10-20 17:29:20 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:29:20 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:29:33 - Comparing key: neHJv81MXOoHoJ17hF
+WARNING - 27-10-20 17:29:33 - Comparing key has failed
+INFO - 27-10-20 17:29:33 - 127.0.0.1 - - [27/Oct/2020 17:29:33] "[37mGET /api/contacts/allAPIKEY=neHJv81MXOoHoJ17hF HTTP/1.1[0m" 200 -
+INFO - 27-10-20 17:29:38 - Comparing key: neHJv81MXOoHoJ17hFuGAQ
+WARNING - 27-10-20 17:29:38 - Comparing key has successfully finished
+INFO - 27-10-20 17:29:38 - 127.0.0.1 - - [27/Oct/2020 17:29:38] "[37mGET /api/contacts/allAPIKEY=neHJv81MXOoHoJ17hFuGAQ HTTP/1.1[0m" 200 -
+INFO - 27-10-20 17:30:05 -  * Detected change in 'e:\\nameme API\\app.py', reloading
+INFO - 27-10-20 17:30:05 -  * Restarting with stat
+INFO - 27-10-20 17:30:05 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:30:05 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:30:05 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:30:05 -  * Debugger is active!
+INFO - 27-10-20 17:30:05 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:30:05 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:32:42 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:32:42 -  * Restarting with stat
+INFO - 27-10-20 17:32:43 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:32:43 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:32:43 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:32:43 -  * Debugger is active!
+INFO - 27-10-20 17:32:43 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:32:43 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:33:18 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:33:18 -  * Restarting with stat
+INFO - 27-10-20 17:33:18 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:18 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:18 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:33:18 -  * Debugger is active!
+INFO - 27-10-20 17:33:18 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:33:18 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:33:22 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:33:22 -  * Restarting with stat
+INFO - 27-10-20 17:33:23 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:23 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:23 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:33:23 -  * Debugger is active!
+INFO - 27-10-20 17:33:23 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:33:23 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:33:26 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:33:26 -  * Restarting with stat
+INFO - 27-10-20 17:33:26 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:26 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:26 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:33:26 -  * Debugger is active!
+INFO - 27-10-20 17:33:26 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:33:26 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:33:32 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:33:32 -  * Restarting with stat
+INFO - 27-10-20 17:33:32 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:32 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:32 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:33:32 -  * Debugger is active!
+INFO - 27-10-20 17:33:32 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:33:32 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+CRITICAL - 27-10-20 17:33:36 - app has stopped running
+INFO - 27-10-20 17:33:39 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:39 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:39 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:33:39 -  * Restarting with stat
+INFO - 27-10-20 17:33:39 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:33:39 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:33:39 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+WARNING - 27-10-20 17:33:39 -  * Debugger is active!
+INFO - 27-10-20 17:33:39 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:33:39 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO - 27-10-20 17:33:47 - 127.0.0.1 - - [27/Oct/2020 17:33:47] "[37mGET /api/contacts HTTP/1.1[0m" 200 -
+DEBUG - 27-10-20 17:34:00 - Starting new HTTPS connection (1): isitarealemail.com:443
+DEBUG - 27-10-20 17:34:01 - https://isitarealemail.com:443 "GET /api/email/validate?email=adt%40gmail.com HTTP/1.1" 200 None
+INFO - 27-10-20 17:34:01 - 127.0.0.1 - - [27/Oct/2020 17:34:01] "[37mPOST /api/contacts HTTP/1.1[0m" 200 -
+DEBUG - 27-10-20 17:34:17 - Starting new HTTPS connection (1): isitarealemail.com:443
+DEBUG - 27-10-20 17:34:19 - https://isitarealemail.com:443 "GET /api/email/validate?email=adt565%40gmail.com HTTP/1.1" 200 18
+INFO - 27-10-20 17:34:19 - Registered key: o8JoaBPQ5jTwx05yBchWIgto adt / adt565@gmail.com
+INFO - 27-10-20 17:34:19 - 127.0.0.1 - - [27/Oct/2020 17:34:19] "[37mPOST /api/contacts HTTP/1.1[0m" 200 -
+INFO - 27-10-20 17:34:28 -  * Detected change in 'e:\\nameme API\\api_calls.py', reloading
+INFO - 27-10-20 17:34:28 -  * Restarting with stat
+INFO - 27-10-20 17:34:29 - Instance created with 3xwCBz-bHsXrU0qdkhdLoA Yon Liud ejliud@yahoo.org
+INFO - 27-10-20 17:34:29 - Instance created with neHJv81MXOoHoJ17hFuGAQ Yossi Vvv email45@yahoo.com
+INFO - 27-10-20 17:34:29 - Instance created with MuMtVCyMXKjgZ_FscYOpwg Nitzan Rot hello@yahoo.com
+INFO - 27-10-20 17:34:29 - Instance created with o8JoaBPQ5jTwx05yBchWIg adt adt565@gmail.com
+WARNING - 27-10-20 17:34:29 -  * Debugger is active!
+INFO - 27-10-20 17:34:29 -  * Debugger PIN: 267-335-714
+INFO - 27-10-20 17:34:29 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+CRITICAL - 27-10-20 17:35:03 - app has stopped running
+CRITICAL - 27-10-20 17:35:03 - app has stopped running
