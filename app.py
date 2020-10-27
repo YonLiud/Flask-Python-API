@@ -1,13 +1,21 @@
-from os import name
+import os
 import secrets
 import sqlite3
-from flask import Flask,redirect,url_for,render_template,request, jsonify
+from flask import Flask,redirect,url_for,render_template,request, jsonify, send_from_directory
 import requests
+import logging
+
+
+logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+logging.warning('This will get logged to a file')
 app=Flask(__name__)
 conn = sqlite3.connect('database.db')
 accounts = []
 api_keys = []
 table_name = "contacts"
+
+
+
 def setup(conn):
     cursor = conn.cursor()
     desc =  cursor.execute("pragma table_info('" + table_name + "')").fetchall()
@@ -81,6 +89,9 @@ def unspace(str):
 
 
 # Flask Decorators
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 @app.route('/',methods=['GET'])
 def home():
@@ -127,7 +138,7 @@ def api_id(id, key):
         })
     try:
         for account in accounts:
-            if int(account["contact_id"]) == int(id): return jsonify(account)
+            if int(account["id"]) == int(id): return jsonify(account)
         else:
             return jsonify({
                 'error': 'Account not found'
