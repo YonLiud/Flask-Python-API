@@ -151,4 +151,4 @@ if __name__ == '__main__':
     keys_conn = sqlite3.connect('api_keys.db')
     set_api_keys(keys_conn)
     setup(conn=conn)
-    app.run(port=5000,debug=True)
+    app.run(port=3034,debug=True)
