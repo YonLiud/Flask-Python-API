@@ -55,7 +55,7 @@ def set_api_keys(keys_conn):
 
 def validatekey(key):
     logging.info("Comparing key: " + key)
-    if not api_key:
+    if not api_keys:
         return False
     for api in api_keys:
         if key == api.get_key():

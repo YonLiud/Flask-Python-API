@@ -2,5 +2,4 @@ nameMe API.code-workspace
 __pycache__/
 api_keys.db
 api_keys.db-journal
-app.log
 api.log
