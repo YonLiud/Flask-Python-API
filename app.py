@@ -114,6 +114,7 @@ def api_name(name, key):
     })
 
 if __name__ == '__main__':
+    database_setup()
     keys_conn = sqlite3.connect('api_keys.db')
     set_api_keys(keys_conn)
     setup(conn=conn)

@@ -14,6 +14,37 @@ class api_key():
     def get_owner(self):
         return [self.name, self.email]
 
+def database_setup():
+    #Contact's Database
+    conn = sqlite3.connect('database.db')
+    cur = conn.cursor()
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS "contacts" (
+	"id"	INTEGER NOT NULL,
+	"key"	TEXT NOT NULL,
+	"first_name"	TEXT NOT NULL,
+	"middle_name"	TEXT,
+	"last_name"	TEXT NOT NULL,
+	"email"	TEXT,
+	"phone"	TEXT,
+	"hobbies"	TEXT,
+	PRIMARY KEY("id")
+    );
+    """)
+    conn.close()
+    #API Key's Database
+    conn = sqlite3.connect('api_keys.db')
+    cur = conn.cursor()
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS "keys" (
+	"key"	TEXT NOT NULL UNIQUE,
+	"name"	TEXT NOT NULL UNIQUE,
+	"email"	TEXT NOT NULL UNIQUE,
+	PRIMARY KEY("key")
+    );
+    """)
+
+
 def set_api_keys(keys_conn):
     api_keys.clear()
     cursor = keys_conn.cursor()
