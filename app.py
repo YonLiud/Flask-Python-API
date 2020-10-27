@@ -1,20 +1,14 @@
 import os
-import secrets
 import sqlite3
 from flask import Flask,redirect,url_for,render_template,request, jsonify, send_from_directory
 import requests
 import logging
+from api_calls import *
 
-
-logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
-logging.warning('This will get logged to a file')
 app=Flask(__name__)
 conn = sqlite3.connect('database.db')
 accounts = []
-api_keys = []
 table_name = "contacts"
-
-
 
 def setup(conn):
     cursor = conn.cursor()
@@ -40,45 +34,6 @@ def setup(conn):
             'error': exc
             })
 
-class api_key():
-    def __init__(self, key, name, email):
-        self.__key = key
-        self.name = name
-        self.email = email
-    def get_key(self):
-        return self.__key
-    def get_owner(self):
-        return [self.name, self.email]
-
-def set_api_keys(keys_conn):
-    api_keys.clear()
-    cursor = keys_conn.cursor()
-    keys = cursor.execute('SELECT * FROM keys').fetchall()
-    for key in keys:
-        api_keys.append(api_key(key[0], key[1], key[2]))
-
-def validatekey(key):
-    if not api_key:
-        return False
-    for api in api_keys:
-        if key == api.get_key():
-            return True
-    else:
-        return False
-def register_key(name, email):
-    keys_conn = sqlite3.connect('api_keys.db')
-    cursor = keys_conn.cursor()
-    generated_key = secrets.token_urlsafe(16)
-    try:
-        cursor.execute("INSERT INTO keys VALUES(?, ?, ?);", (generated_key, name, email))
-        keys_conn.commit()
-        print("Registered key: "+generated_key)
-        return generated_key
-    except Exception as exc:
-        print(exc)
-        if str(exc).split()[0].lower() == "unique":
-            return "Name or Email are already in use"
-        return exc
 
 def unspace(str):
     output = ""
@@ -163,3 +118,4 @@ if __name__ == '__main__':
     set_api_keys(keys_conn)
     setup(conn=conn)
     app.run(port=5000,debug=True)
+    logging.critical("app has stopped running")
