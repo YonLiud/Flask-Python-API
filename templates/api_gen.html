@@ -1,11 +1,42 @@
 {% extends "layout.html" %}
 {% block body %}
-<h1>Generate API key</h1>
-<p>To use the API you must register an API key</p>
-<form action="" method="POST">
-    <p>Name:<br><input type="text" placeholder="Your Name" id="name" name="name"></p>
-    <p>Email:<br><input type="email" placeholder="name@example.com" id="email" name="email"></p>
-    <input type="submit" />
-</form>
-<p>Unique Key = {{key}}</p>
+<table>
+    <td>
+        <h1>Generate API key</h1>
+        <p>To use the API you must register an API key</p>
+        <p>Remember this API key, you wont be able to access our data without it!</p>
+        <form action="" method="POST">
+            <p>Name:<br><input type="text" placeholder="Your Name" id="name" name="name"></p>
+            <p>Email:<br><input type="email" placeholder="name@example.com" id="email" name="email"></p>
+            <input type="submit" />
+        </form>
+        <p>Unique Key =<span style="font-weight:bolder;"> {{key}}</span><br></p>
+    </td>
+    <div class="vl"></div>
+    <td>
+        <h1>Usages of this API:</h1>
+        <p></p>
+        <hr>
+        <div>
+            <h2><p>Search a contact by <span style="color: green;">specific ID</span>:</p>
+                <a href="#"> /api/contacts/ID=<span style="color: brown;">id</span>APIKEY=<span style="color: brown;">key</span> </a>
+            </h2>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                <p>Search <span style="color:green;">all</span> in the API:</p>
+                <a href="#">/api/contacts/allAPIKEY=<span style="color: brown;">key</span></a>
+            </h2>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                <p>Search a contact by <span style="color: green;">specific NAME</span>:</p>
+                <a href="#"> /api/contacts/NAME=<span style="color: brown;">name</span>APIKEY=<span style="color: brown;">key</span> </a>
+            </h2>
+        </div>
+    </td>
+
+</table>
 {% endblock %}
