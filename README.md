@@ -29,6 +29,11 @@
 NameME is a database containing information about people who register and upload information about themselves!
 The usage of NameME API is open for everyone interested in it contributing to it. The usage of NameME is completely free and available for everyone!
 
+## ✂️ Editing this API
+
+Everyone is authorized to use this source code by the (license)(/LICENSE) provided in this project
+
+
 ## ⛏️ Built Using
 
 - [Python](https://www.python.org/) - Main API Language
