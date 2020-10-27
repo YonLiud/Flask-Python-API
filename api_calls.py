@@ -72,6 +72,7 @@ def register_key(name, email):
         cursor.execute("INSERT INTO keys VALUES(?, ?, ?);", (generated_key, name, email))
         keys_conn.commit()
         logging.info("Registered key: "+generated_key + " to " + name + " / " + email)
+        api_keys.append(generated_key)
         return generated_key
     except Exception as exc:
         print(exc)
