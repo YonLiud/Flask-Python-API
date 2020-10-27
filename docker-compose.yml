@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  namemeapi:
+    image: namemeapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3034:3034

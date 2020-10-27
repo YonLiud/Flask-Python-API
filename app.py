@@ -115,12 +115,7 @@ def api_name(name, key):
 
 if __name__ == '__main__':
     database_setup()
-    keys_conn = sqlite3.connect('api_keys.db')
-    set_api_keys(keys_conn)
+    set_api_keys()
     setup(conn=conn)
-<<<<<<< HEAD
-    app.run(port=5000,debug=True)
+    app.run(port=3034,debug=True, host="0.0.0.0")
     logging.critical("app has stopped running")
-=======
-    app.run(port=3034,debug=True)
->>>>>>> master
