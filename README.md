@@ -19,7 +19,10 @@
     <br> 
 </p>
 
+## 🎥 Demo
 
+[![image.png](https://i.postimg.cc/NMwCVf76/image.png)](https://postimg.cc/DWBc4hN0)
+[![image.png](https://i.postimg.cc/28PQT9xv/image.png)](https://postimg.cc/fJfSRKpT)
 
 ## 🧐 About NameME
 
