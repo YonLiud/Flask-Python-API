@@ -58,7 +58,8 @@ def validatekey(key):
     if not api_keys:
         return False
     for api in api_keys:
-        if key == api.get_key():
+        valid_key = str(api.get_key())
+        if key == valid_key:
             logging.warning("Comparing key has successfully finished")
             return True
     else:
