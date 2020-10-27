@@ -45,7 +45,8 @@ def database_setup():
     """)
 
 
-def set_api_keys(keys_conn):
+def set_api_keys():
+    keys_conn = sqlite3.connect('api_keys.db')
     api_keys.clear()
     cursor = keys_conn.cursor()
     keys = cursor.execute('SELECT * FROM keys').fetchall()
@@ -72,8 +73,8 @@ def register_key(name, email):
     try:
         cursor.execute("INSERT INTO keys VALUES(?, ?, ?);", (generated_key, name, email))
         keys_conn.commit()
+        set_api_keys()
         logging.info("Registered key: "+generated_key + " to " + name + " / " + email)
-        api_keys.append(generated_key)
         return generated_key
     except Exception as exc:
         print(exc)
