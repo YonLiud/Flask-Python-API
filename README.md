@@ -33,7 +33,20 @@ The usage of NameME API is open for everyone interested in it contributing to it
 
 Everyone is authorized to use this source code by the (license)(/LICENSE) provided in this project
 
-
+## 🔭 API's Database Must Structure
+#### api_keys.db
+```sql
+"key"	TEXT NOT NULL UNIQUE,
+"name"	TEXT NOT NULL UNIQUE,
+"email"	TEXT NOT NULL UNIQUE,
+PRIMARY KEY("key")
+  ```
+#### database.db
+```sql
+"id"	INTEGER NOT NULL,
+"key"	TEXT NOT NULL,
+-- ADD HERE YOUR WANTED COLUMNS
+```
 ## ⛏️ Built Using
 
 - [Python](https://www.python.org/) - Main API Language

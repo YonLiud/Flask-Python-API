@@ -1,13 +1,15 @@
-from os import name
-import secrets
+import os
 import sqlite3
-from flask import Flask,redirect,url_for,render_template,request, jsonify
+from flask import Flask,redirect,url_for,render_template,request, jsonify, send_from_directory
 import requests
+import logging
+from api_calls import *
+
 app=Flask(__name__)
 conn = sqlite3.connect('database.db')
 accounts = []
-api_keys = []
 table_name = "contacts"
+
 def setup(conn):
     cursor = conn.cursor()
     desc =  cursor.execute("pragma table_info('" + table_name + "')").fetchall()
@@ -32,45 +34,6 @@ def setup(conn):
             'error': exc
             })
 
-class api_key():
-    def __init__(self, key, name, email):
-        self.__key = key
-        self.name = name
-        self.email = email
-    def get_key(self):
-        return self.__key
-    def get_owner(self):
-        return [self.name, self.email]
-
-def set_api_keys(keys_conn):
-    api_keys.clear()
-    cursor = keys_conn.cursor()
-    keys = cursor.execute('SELECT * FROM keys').fetchall()
-    for key in keys:
-        api_keys.append(api_key(key[0], key[1], key[2]))
-
-def validatekey(key):
-    if not api_key:
-        return False
-    for api in api_keys:
-        if key == api.get_key():
-            return True
-    else:
-        return False
-def register_key(name, email):
-    keys_conn = sqlite3.connect('api_keys.db')
-    cursor = keys_conn.cursor()
-    generated_key = secrets.token_urlsafe(16)
-    try:
-        cursor.execute("INSERT INTO keys VALUES(?, ?, ?);", (generated_key, name, email))
-        keys_conn.commit()
-        print("Registered key: "+generated_key)
-        return generated_key
-    except Exception as exc:
-        print(exc)
-        if str(exc).split()[0].lower() == "unique":
-            return "Name or Email are already in use"
-        return exc
 
 def unspace(str):
     output = ""
@@ -81,6 +44,9 @@ def unspace(str):
 
 
 # Flask Decorators
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 @app.route('/',methods=['GET'])
 def home():
@@ -127,7 +93,7 @@ def api_id(id, key):
         })
     try:
         for account in accounts:
-            if int(account["contact_id"]) == int(id): return jsonify(account)
+            if int(account["id"]) == int(id): return jsonify(account)
         else:
             return jsonify({
                 'error': 'Account not found'
@@ -148,7 +114,8 @@ def api_name(name, key):
     })
 
 if __name__ == '__main__':
-    keys_conn = sqlite3.connect('api_keys.db')
-    set_api_keys(keys_conn)
+    database_setup()
+    set_api_keys()
     setup(conn=conn)
-    app.run(port=3034,debug=True)
+    app.run(port=3034,debug=True, host="0.0.0.0")
+    logging.critical("app has stopped running")
