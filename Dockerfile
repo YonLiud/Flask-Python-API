@@ -20,5 +20,11 @@ ADD . /app
 RUN useradd appuser && chown -R appuser /app
 USER appuser
 
+# Update & Upgrade dependencies
+RUN apt-get update && apt upgrade
+
+# Install required tools to be able to work inside the container
+RUN apt-get install nano sqlite3 procps
+
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["gunicorn", "--bind", "0.0.0.0:3034", "app:app"]
